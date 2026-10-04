@@ -1,0 +1,23 @@
+{
+  "scenario_id": "SCENARIO-001",
+  "equipment_id": "GEN-TX-004",
+  "symptoms": [
+    "elevated_temperature",
+    "elevated_vibration"
+  ],
+  "root_cause": "bearing_degradation",
+  "risk": "critical",
+  "expected_agents": [
+    "operations",
+    "maintenance",
+    "knowledge",
+    "incident",
+    "risk"
+  ],
+  "expected_actions": [
+    "create_incident",
+    "create_work_order",
+    "update_equipment_status",
+    "send_notification"
+  ]
+}
