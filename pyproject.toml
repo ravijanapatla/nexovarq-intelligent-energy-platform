@@ -1,0 +1,26 @@
+[project]
+name = "nexovarq-intelligent-energy-platform"
+version = "0.1.0"
+description = "Production-grade Microsoft Agentic AI platform for synthetic energy operations"
+requires-python = ">=3.11"
+
+dependencies = [
+    "azure-identity",
+    "python-dotenv",
+    "pydantic",
+    "httpx"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "ruff"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
